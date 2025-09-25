@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Reference CounterStrikeSharp API -->
+    <Reference Include="CounterStrikeSharp.API">
+      <HintPath>..\libs\CounterStrikeSharp.API.dll</HintPath>
+    </Reference>
+
+    <!-- Newtonsoft.Json for JSON parsing -->
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+</Project>
