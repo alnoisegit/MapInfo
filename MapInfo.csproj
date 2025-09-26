@@ -7,12 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <!-- Reference CounterStrikeSharp API -->
     <Reference Include="CounterStrikeSharp.API">
       <HintPath>..\libs\CounterStrikeSharp.API.dll</HintPath>
     </Reference>
 
-    <!-- Newtonsoft.Json for JSON parsing -->
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
 

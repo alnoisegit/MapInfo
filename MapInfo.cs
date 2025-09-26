@@ -16,6 +16,7 @@ using System.Collections.Generic;
         public int Tier { get; set; }
         public int Stages { get; set; }
         public string Type { get; set; }
+        public int Bonuses { get; set; }
     }
 
     private Dictionary<string, MapData> mapInfo;
@@ -34,10 +35,11 @@ using System.Collections.Generic;
     public class LangConfig
     {
         public string Prefix { get; set; } = "[Map Info]";
-        public string CurrentMap { get; set; } = "{PREFIX} {MAP} - Tier: {TIER}, Type: {TYPE}{STAGES}";
+        public string CurrentMap { get; set; } = "{PREFIX} {MAP} - Tier: {TIER}, Type: {TYPE}{STAGES}{BONUSES}";
         public string OtherMap { get; set; } = "{PREFIX} {MAP} - Tier: {TIER}, Type: {TYPE}{STAGES}";
         public string NoData { get; set; } = "{PREFIX} No data found for {MAP}";
         public string StagesFormat { get; set; } = ", Stages: {STAGES}";
+        public string BonusesFormat { get; set; } = ", Bonuses: {BONUSES}";
     }
 
     private void LoadLang()
@@ -92,6 +94,12 @@ using System.Collections.Generic;
                 stagesText = lang.StagesFormat.Replace("{STAGES}", data.Stages.ToString());
             }
 
+            string bonusesText = "";
+            if (data.Bonuses > 0)
+            {
+                bonusesText = lang.BonusesFormat.Replace("{BONUSES}", data.Bonuses.ToString());
+            }
+
             string template = info.ArgCount > 1 ? lang.OtherMap : lang.CurrentMap;
 
             string msg = template
@@ -99,7 +107,8 @@ using System.Collections.Generic;
                 .Replace("{MAP}", mapName)
                 .Replace("{TIER}", data.Tier.ToString())
                 .Replace("{TYPE}", data.Type)
-                .Replace("{STAGES}", stagesText);
+                .Replace("{STAGES}", stagesText)
+                .Replace("{BONUSES}", bonusesText);
 
             msg = msg.ReplaceColorTags();
 
