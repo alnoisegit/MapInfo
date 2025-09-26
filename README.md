@@ -2,9 +2,9 @@
 
 **Usage**:
 
-**!m** - displays map name, tier, type, and amount of stages (if map is staged)
+**!m** - displays map name, tier, type, amount of stages (if map is staged), and bonuses (if map has any)
 
-**!m (mapname)** - displays another maps name, tier, type, and amount of stages (if map is staged)
+**!m (mapname)** - displays another maps name, tier, type, amount of stages (if map is staged), and bonuses (if map has any)
 
 
 <img width="644" height="172" alt="Screenshot 2025-09-26 023625" src="https://github.com/user-attachments/assets/584b8981-7471-4321-9250-63fc24b3c37c" />
