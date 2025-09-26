@@ -7,7 +7,7 @@
 **!m (mapname)** - displays another maps name, tier, type, and amount of stages (if map is staged)
 
 
-<img width="593" height="88" alt="image" src="https://github.com/user-attachments/assets/bcb39416-6bcf-458c-8dc4-1bc1c24c4aaa" />
+<img width="644" height="172" alt="Screenshot 2025-09-26 023625" src="https://github.com/user-attachments/assets/584b8981-7471-4321-9250-63fc24b3c37c" />
 
 
 **1).** Place addons folder in /game/csgo
