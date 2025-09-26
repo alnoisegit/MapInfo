@@ -9,7 +9,7 @@ using System.Collections.Generic;
     public class MapInfoPlugin : BasePlugin 
     {
     public override string ModuleName => "MapInfo";
-    public override string ModuleVersion => "1.0";
+    public override string ModuleVersion => "1.1";
     public override string ModuleAuthor => "alnoise";
 
     public class MapData {
